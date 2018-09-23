@@ -17,20 +17,30 @@ public class WindowGui extends JFrame {
     public void mainWindow() {
         //  Jira.driver().get("");
         WindowGui mainwindow = new WindowGui();
-        mainwindow.getContentPane().setLayout(new BorderLayout());
         mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainwindow.setSize(400, 200);
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
-        checkboxPanel.setLayout(new BoxLayout(checkboxPanel, BoxLayout.Y_AXIS));
-        buttonPanel.add(addFile());
-        buttonPanel.add(run());
-        buttonPanel.add(deleteSt());
-        mainwindow.add(buttonPanel, BorderLayout.WEST);
-        mainwindow.add(checkboxPanel, BorderLayout.EAST);
+        mainwindow.add(buttons(), BorderLayout.WEST);
+        mainwindow.add(jspCheckbox());
         mainwindow.setVisible(true);
         mainwindow.setTitle("Add scenario");
 
+    }
+    public JScrollPane jspCheckbox(){
+        JScrollPane jspCheckbox = new JScrollPane(checkboxPanel);
+        jspCheckbox.setHorizontalScrollBarPolicy(
+                JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        jspCheckbox.setVerticalScrollBarPolicy(
+                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        checkboxPanel.setLayout(new BoxLayout(checkboxPanel, BoxLayout.Y_AXIS));
+    return jspCheckbox;}
+
+    public JPanel buttons(){
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
+        buttonPanel.add(addFile());
+        buttonPanel.add(run());
+        buttonPanel.add(deleteSt());
+        return buttonPanel;
     }
 
     public void ActionFileChoser() {
@@ -48,7 +58,7 @@ public class WindowGui extends JFrame {
                 selectedScenarios.add(filesss.getName());
                 checkBoxesList.add(new JCheckBox(filesss.getName()));
             }
-            System.out.println(selectedScenarios.get(1));
+            //System.out.println(selectedScenarios.get(1));
             System.out.println(selectedScenarios.get(0));
         }
         tcCheckbox();
@@ -86,11 +96,11 @@ public class WindowGui extends JFrame {
                                 selectedScenarios.remove(x);
                             checkboxPanel.remove(box);
                             checkboxPanel.revalidate();
+                            checkboxPanel.repaint();
                         }
                     }
                 }
             }
-
         });
         return deleteSt;
     }

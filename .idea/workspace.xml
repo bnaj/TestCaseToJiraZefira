@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="751b33ce-5ad6-41ef-8f8d-6dcfbd159f4b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WindowGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindowGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/WindowGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,17 +22,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="274">
               <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="240">
+              <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+            <state relative-caret-position="1099">
+              <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2825#3386#0" expanded="true" />
@@ -87,9 +83,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Window.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jira.java" />
         <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
       </list>
     </option>
   </component>
@@ -431,13 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Jira.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -448,24 +437,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+        <state relative-caret-position="1099">
+          <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2825#3386#0" expanded="true" />
             <element signature="e#3385#3386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -72,11 +72,15 @@ public class TestScenarioLoad {
 
     public void allStuff() {
         ArrayList<String> file = WindowGui.selectedScenarios;
-        for (int z = 0; z < file.size(); z++) {
-            System.out.println(firstScenarioData(0, 1, file.get(z)));
-            for (int x = 0; x < tablesResoultIterator(file.get(z)).size(); x++) {
-                System.out.println(tablesStepsIterator(file.get(z)).get(x));
-                System.out.println(tablesResoultIterator(file.get(z)).get(x));
+        for (int fileNumber = 0; fileNumber < file.size(); fileNumber++) {
+
+            System.out.println(firstScenarioData(0, 1, file.get(fileNumber)));
+            System.out.println(firstScenarioData(1, 1, file.get(fileNumber)));
+
+            for (int x = 0; x < tablesResoultIterator(file.get(fileNumber)).size(); x++) {
+
+                System.out.println(tablesStepsIterator(file.get(fileNumber)).get(x));
+                System.out.println(tablesResoultIterator(file.get(fileNumber)).get(x));
             }
         }
     }
