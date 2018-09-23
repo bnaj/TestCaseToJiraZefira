@@ -1,37 +1,62 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class WindowGui extends JFrame {
 
     public static ArrayList<String> selectedScenarios = new ArrayList<String>();
+    public List<JCheckBox> checkBoxesList = new ArrayList<JCheckBox>();
+    JPanel checkboxPanel = new JPanel();
+    TestScenarioLoad tcLoad = new TestScenarioLoad();
 
-    public static void ActionFileChoser() {
+
+    public void mainWindow() {
+        //  Jira.driver().get("");
+        WindowGui mainwindow = new WindowGui();
+        mainwindow.getContentPane().setLayout(new BorderLayout());
+        mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainwindow.setSize(400, 200);
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
+        checkboxPanel.setLayout(new BoxLayout(checkboxPanel, BoxLayout.Y_AXIS));
+        buttonPanel.add(addFile());
+        buttonPanel.add(run());
+        buttonPanel.add(deleteSt());
+        mainwindow.add(buttonPanel, BorderLayout.WEST);
+        mainwindow.add(checkboxPanel, BorderLayout.EAST);
+        mainwindow.setVisible(true);
+        mainwindow.setTitle("Add scenario");
+
+    }
+
+    public void ActionFileChoser() {
         JFileChooser fileChooser = new JFileChooser("/home/spike/Pulpit");
         fileChooser.setMultiSelectionEnabled(true);
-
         fileChooser.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             }
         });
-
         int status = fileChooser.showOpenDialog(null);
         if (status == JFileChooser.APPROVE_OPTION) {
 
             File[] selectedFile = fileChooser.getSelectedFiles();
-
             for (File filesss : selectedFile) {
                 selectedScenarios.add(filesss.getName());
+                checkBoxesList.add(new JCheckBox(filesss.getName()));
             }
             System.out.println(selectedScenarios.get(1));
             System.out.println(selectedScenarios.get(0));
         }
+        tcCheckbox();
     }
 
-    public static JButton addFile() {
-        JButton addFile = new JButton("Click to add scenario");
+    public JButton addFile() {
+        JButton addFile = new JButton("<html>Click to add<br>scenario</html");
+
         addFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ActionFileChoser();
@@ -40,30 +65,48 @@ public class WindowGui extends JFrame {
         return addFile;
     }
 
-    public static JButton run() {
-        JButton run = new JButton("Click to run");
+    public JButton run() {
+        JButton run = new JButton("Click to run ");
         run.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                TestScenarioLoad.allStuff();
+                tcLoad.allStuff();
             }
         });
         return run;
     }
 
-    public static void zzzz() {
-      //  Jira.driver().get("");
-        WindowGui wg = new WindowGui();
-        wg.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        wg.setSize(400, 200);
-        JPanel panel = new JPanel();
-        panel.add(addFile());
-        panel.add(run());
-        wg.getContentPane().add(panel);
-        wg.setVisible(true);
-        wg.setTitle("How many of doc to slut?");
+    public JButton deleteSt() {
+        JButton deleteSt = new JButton("Click to delete");
+        deleteSt.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                for (JCheckBox box : checkBoxesList) {
+                    if (box.isSelected()) {
+                        for (int x = 0; x < selectedScenarios.size(); x++) {
+                            if (box.getText().equals(selectedScenarios.get(x)))
+                                selectedScenarios.remove(x);
+                            checkboxPanel.remove(box);
+                            checkboxPanel.revalidate();
+                        }
+                    }
+                }
+            }
+
+        });
+        return deleteSt;
     }
 
+    public void tcCheckbox() {
+        for (JCheckBox box : checkBoxesList) {
+            checkboxPanel.add(box);
+            box.setSelected(false);
+            box.isVisible();
+            checkboxPanel.revalidate();
+        }
+    }
+
+
     public static void main(String[] args) {
-        zzzz();
+        WindowGui starter = new WindowGui();
+        starter.mainWindow();
     }
 }

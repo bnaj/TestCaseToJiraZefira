@@ -12,7 +12,7 @@ import java.util.List;
 
 public class TestScenarioLoad {
 
-    public static List<XWPFTable> prepareTables(String fileName) {
+    public List<XWPFTable> prepareTables(String fileName) {
         FileInputStream fis = null;
         try {
             fis = new FileInputStream("/home/spike/Pulpit/" + fileName);
@@ -32,7 +32,7 @@ public class TestScenarioLoad {
     }
 
 
-    public static ArrayList<String> tablesStepsIterator(String fileName) {
+    public ArrayList<String> tablesStepsIterator(String fileName) {
         ArrayList<String> stepsArray = new ArrayList<String>();
 
         for (XWPFTable table : prepareTables(fileName)) {
@@ -47,7 +47,7 @@ public class TestScenarioLoad {
         return stepsArray;
     }
 
-    public static ArrayList<String> tablesResoultIterator(String fileName) {
+    public ArrayList<String> tablesResoultIterator(String fileName) {
         ArrayList<String> resoultArr = new ArrayList<String>();
 
         for (XWPFTable table : prepareTables(fileName)) {
@@ -61,7 +61,7 @@ public class TestScenarioLoad {
         return resoultArr;
     }
 
-    public static String firstScenarioData(int rowPosition, int cellInRow, String fileName) {
+    public String firstScenarioData(int rowPosition, int cellInRow, String fileName) {
         String getOne = null;
 
         for (XWPFTable table : prepareTables(fileName)) {
@@ -70,7 +70,7 @@ public class TestScenarioLoad {
         return getOne;
     }
 
-    public static void allStuff() {
+    public void allStuff() {
         ArrayList<String> file = WindowGui.selectedScenarios;
         for (int z = 0; z < file.size(); z++) {
             System.out.println(firstScenarioData(0, 1, file.get(z)));
@@ -80,5 +80,4 @@ public class TestScenarioLoad {
             }
         }
     }
-
 }
