@@ -49,7 +49,6 @@ public class TestScenarioLoad {
 
     public ArrayList<String> tablesResoultIterator(String fileName) {
         ArrayList<String> resoultArr = new ArrayList<String>();
-
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
 
