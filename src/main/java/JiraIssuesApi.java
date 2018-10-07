@@ -118,7 +118,4 @@ public class JiraIssuesApi {
 
         return createSteps.toString();
     }
-
-    public static void main(String[] args) {
-    }
 }
