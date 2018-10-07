@@ -81,7 +81,8 @@ public class TestScenarioLoad {
 
             for (int x = 0; x < tablesResoultIterator(file.get(fileNumber)).size(); x++) {
 
-                JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber)).get(x),tablesResoultIterator(file.get(fileNumber)).get(x));
+                JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber)).get(x),
+                        tablesResoultIterator(file.get(fileNumber)).get(x));
                 System.out.println(tablesStepsIterator(file.get(fileNumber)).get(x));
                 System.out.println(tablesResoultIterator(file.get(fileNumber)).get(x));
             }

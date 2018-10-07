@@ -15,7 +15,6 @@ public class WindowGui extends JFrame {
 
 
     public void mainWindow() {
-        //  Jira.driver().get("");
         WindowGui mainwindow = new WindowGui();
         mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainwindow.setSize(400, 200);
@@ -23,6 +22,7 @@ public class WindowGui extends JFrame {
         mainwindow.add(jspCheckbox());
         mainwindow.setVisible(true);
         mainwindow.setTitle("Add scenario");
+        mainwindow.setLocationRelativeTo(null);
     }
 
     public JScrollPane jspCheckbox() {
@@ -59,8 +59,6 @@ public class WindowGui extends JFrame {
                 selectedScenarios.add(filesss.getName());
                 checkBoxesList.add(new JCheckBox(filesss.getName()));
             }
-            //System.out.println(selectedScenarios.get(1));
-            System.out.println(selectedScenarios.get(0));
         }
         tcCheckbox();
     }

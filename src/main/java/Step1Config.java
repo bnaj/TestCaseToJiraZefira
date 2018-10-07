@@ -64,9 +64,9 @@ public class Step1Config extends JFrame {
         configWindow.setSize(800, 300);
         configWindow.add(txtF());
         configWindow.setVisible(true);
-        configWindow.setTitle("Config");
-
-    }
+        configWindow.setTitle("Step 1 config");
+        configWindow.setLocationRelativeTo(null);
+        }
 
     public JCheckBox wwwCh() {
         wwwCh.setSelected(false);
