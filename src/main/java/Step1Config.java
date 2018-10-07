@@ -11,21 +11,22 @@ public class Step1Config extends JFrame {
     public static String jiraProjectKey;
 
     JFrame configWindow = new JFrame();
-    JLabel labelWww = new JLabel("Enter your organization name Jira");
+    JLabel labelWww = new JLabel("<html>Enter your organization name Jira<br/> " +
+            "like http://192.168.0.116:8080</html>");
     JCheckBox wwwCh = new JCheckBox();
-    JTextField wwAdd = new JTextField(20);
+    JTextField wwAdd = new JTextField(30);
 
     JLabel projectLabel = new JLabel("Enter project key");
     JCheckBox projectCh = new JCheckBox();
-    JTextField projectField = new JTextField(20);
+    JTextField projectField = new JTextField(30);
 
     JLabel login = new JLabel("Enter login");
     JCheckBox loginCh = new JCheckBox();
-    JTextField loginField = new JTextField(20);
+    JTextField loginField = new JTextField(30);
 
     JLabel pass = new JLabel("Enter password");
     JCheckBox passCh = new JCheckBox();
-    JTextField passField = new JTextField(20);
+    JPasswordField passField = new JPasswordField(30);
 
     public JButton next() {
         JButton nextB = new JButton("Click to go");
@@ -60,7 +61,7 @@ public class Step1Config extends JFrame {
 
     public void configWindow() {
         configWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        configWindow.setSize(600, 300);
+        configWindow.setSize(800, 300);
         configWindow.add(txtF());
         configWindow.setVisible(true);
         configWindow.setTitle("Config");
@@ -120,7 +121,6 @@ public class Step1Config extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (passCh.isSelected()) {
                     jiraPass = passField.getText();
-                    System.out.println(jiraPass);
                 }
             }
         });

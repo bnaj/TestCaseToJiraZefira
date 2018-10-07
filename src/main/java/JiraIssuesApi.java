@@ -11,17 +11,17 @@ public class JiraIssuesApi {
 
     public static String issueID;
 
-    public static void createIssue(){//String projectKey, String summary, String description) {
+    public static void createIssue(String projectKey, String summary, String description) {
         try {
-            URL url = new URL("http://192.168.0.116:8080/rest/api/2/issue/");
-            //  URL url = new URL("http://" + Step1Config.wwwAddress + "/rest/api/2/issue/");
+            //URL url = new URL("http://192.168.0.116:8080/rest/api/2/issue/");
+              URL url = new URL(Step1Config.wwwAddress + "/rest/api/2/issue/");
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setDoOutput(true);
             conn.setDoInput(true);
 
-            String login = "janbnoir";//Step1Config.jiraLogin;//"janbnoir";
-            String password = "xep624";//Step1Config.jiraPass;//"xep624";
+            String login = Step1Config.jiraLogin;//"janbnoir";
+            String password = Step1Config.jiraPass;//"xep624";
             String loginPassword = login + ":" + password;
 
             byte[] encoded = Base64.encode(loginPassword.getBytes());
@@ -30,8 +30,8 @@ public class JiraIssuesApi {
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Authorization", "Basic " + credentials);
             conn.setRequestProperty("Content-Type", "application/json");
-            String encodedData = getJSON_Body();//projectKey,summary,description);
-            System.out.println(getJSON_Body());//projectKey,summary,description));
+            String encodedData = getJSON_Body(projectKey,summary,description);
+            System.out.println(getJSON_Body(projectKey,summary,description));
             conn.setRequestProperty("Content-Length", String.valueOf(encodedData.length()));
             conn.getOutputStream().write(encodedData.getBytes());
             int responseCode = conn.getResponseCode();
@@ -55,13 +55,13 @@ public class JiraIssuesApi {
         }
     }
 
-    public static String getJSON_Body(){//String projectKey, String summary, String description) {
+    public static String getJSON_Body(String projectKey, String summary, String description) {
         JsonObject createIssue = Json.createObjectBuilder()
                 .add("fields",
                         Json.createObjectBuilder().add("project",
-                                Json.createObjectBuilder().add("key", "PROJ"))
-                                .add("summary", "sdsadsad")
-                                .add("description", "dsadsadsadasd")
+                                Json.createObjectBuilder().add("key", projectKey))
+                                .add("summary", summary)
+                                .add("description", description)
                                 .add("issuetype",
                                         Json.createObjectBuilder().add("name", "Test"))
                 ).build();
@@ -69,16 +69,18 @@ public class JiraIssuesApi {
         return createIssue.toString();
     }
 
-    public static void zephyr() {
+    public static void zephyr(String step, String resoult) {
         try {
-            URL url = new URL("http://192.168.0.116:8080/rest/zapi/latest/teststep/"+issueID);
+            //URL url = new URL("http://192.168.0.116:8080/rest/zapi/latest/teststep/"+issueID);
+              URL url = new URL(Step1Config.wwwAddress + "/rest/zapi/latest/teststep/"+issueID);
+
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setDoOutput(true);
             conn.setDoInput(true);
 
-            String login = "janbnoir";
-            String password = "xep624";
+            String login = Step1Config.jiraLogin;//"janbnoir";
+            String password = Step1Config.jiraPass;//"xep624";
             String loginPassword = login + ":" + password;
 
             byte[] encoded = Base64.encode(loginPassword.getBytes());
@@ -87,11 +89,10 @@ public class JiraIssuesApi {
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Authorization", "Basic " + credentials);
             conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
-            // conn.setRequestProperty("Content-Type", "application/json","UTF-8");
-            String encodedData = getBodyForZephyr();
+            String encodedData = getBodyForZephyr(step, resoult);
             conn.setRequestProperty("Content-Length", String.valueOf(encodedData.length()));
             conn.getOutputStream().write(encodedData.getBytes());
-            System.out.println(getBodyForZephyr());
+            System.out.println(getBodyForZephyr(step, resoult));
             int responseCode = conn.getResponseCode();
 
             System.out.println(responseCode);
@@ -102,7 +103,6 @@ public class JiraIssuesApi {
                 while ((inputLine = in.readLine()) != null) {
                     response.append(inputLine);
                 }
-                System.out.println(inputLine);
                 in.close();
             } catch (IOException e) {
                 System.out.println(e.getMessage() + " " + responseCode);
@@ -112,22 +112,17 @@ public class JiraIssuesApi {
         }
     }
 
-    public static String getBodyForZephyr() {
+    public static String getBodyForZephyr(String step, String resoult) {
         JsonObject createSteps = Json.createObjectBuilder()
-                .add("step", "Check for schedule count")
+                .add("step", step)
                 .add("data", "")
-                .add("result", "Count should be equal to schedules returned by this filter.")
+                .add("result", resoult)
                 .build();
 
         return createSteps.toString();
     }
-    public static void jz(){
-       // createIssue();
-        zephyr();
-    }
+
 
     public static void main(String[] args) {
-        createIssue();
-       // jz();
     }
 }
