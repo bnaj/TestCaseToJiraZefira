@@ -114,9 +114,4 @@ public class WindowGui extends JFrame {
         }
     }
 
-
-    public static void main(String[] args) {
-        WindowGui starter = new WindowGui();
-        starter.mainWindow();
-    }
 }

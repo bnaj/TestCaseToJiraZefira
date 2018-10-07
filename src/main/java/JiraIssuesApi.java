@@ -9,16 +9,19 @@ import java.net.*;
 
 public class JiraIssuesApi {
 
-    public static void jiraSendRequest() {
+    public static String issueID;
+
+    public static void createIssue(){//String projectKey, String summary, String description) {
         try {
             URL url = new URL("http://192.168.0.116:8080/rest/api/2/issue/");
+            //  URL url = new URL("http://" + Step1Config.wwwAddress + "/rest/api/2/issue/");
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setDoOutput(true);
             conn.setDoInput(true);
 
-            String login = "janbnoir";
-            String password = "xep624";
+            String login = "janbnoir";//Step1Config.jiraLogin;//"janbnoir";
+            String password = "xep624";//Step1Config.jiraPass;//"xep624";
             String loginPassword = login + ":" + password;
 
             byte[] encoded = Base64.encode(loginPassword.getBytes());
@@ -27,8 +30,8 @@ public class JiraIssuesApi {
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Authorization", "Basic " + credentials);
             conn.setRequestProperty("Content-Type", "application/json");
-            String encodedData = getJSON_Body();
-            System.out.println(getJSON_Body());
+            String encodedData = getJSON_Body();//projectKey,summary,description);
+            System.out.println(getJSON_Body());//projectKey,summary,description));
             conn.setRequestProperty("Content-Length", String.valueOf(encodedData.length()));
             conn.getOutputStream().write(encodedData.getBytes());
             int responseCode = conn.getResponseCode();
@@ -37,10 +40,12 @@ public class JiraIssuesApi {
                 BufferedReader in = new BufferedReader(
                         new InputStreamReader(conn.getInputStream()));
                 String[] inputLine;
-              //  StringBuffer response = new StringBuffer();
                 inputLine = in.readLine().split(":");
+                String inputline2 = inputLine[2].replaceAll("[\",self]", "").trim();
                 String inputline1 = inputLine[1].replaceAll("[\",key]", "").trim();
+                issueID = inputline1;
                 System.out.println(responseCode + " New issues id " + inputline1);
+                System.out.println(responseCode + " New issues key " + inputline2);
                 in.close();
             } catch (IOException e) {
                 System.out.println(e.getMessage() + " " + responseCode);
@@ -50,13 +55,13 @@ public class JiraIssuesApi {
         }
     }
 
-    public static String getJSON_Body() {
+    public static String getJSON_Body(){//String projectKey, String summary, String description) {
         JsonObject createIssue = Json.createObjectBuilder()
                 .add("fields",
                         Json.createObjectBuilder().add("project",
                                 Json.createObjectBuilder().add("key", "PROJ"))
-                                .add("summary", "Test issue")
-                                .add("description", "Test Issue")
+                                .add("summary", "sdsadsad")
+                                .add("description", "dsadsadsadasd")
                                 .add("issuetype",
                                         Json.createObjectBuilder().add("name", "Test"))
                 ).build();
@@ -64,10 +69,9 @@ public class JiraIssuesApi {
         return createIssue.toString();
     }
 
-
     public static void zephyr() {
         try {
-            URL url = new URL("http://192.168.0.116:8080/jira/rest/zapi/latest/teststep/10124/");
+            URL url = new URL("http://192.168.0.116:8080/rest/zapi/latest/teststep/"+issueID);
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setDoOutput(true);
@@ -82,7 +86,8 @@ public class JiraIssuesApi {
 
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Authorization", "Basic " + credentials);
-            conn.setRequestProperty("Content-Type", "application/json");
+            conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            // conn.setRequestProperty("Content-Type", "application/json","UTF-8");
             String encodedData = getBodyForZephyr();
             conn.setRequestProperty("Content-Length", String.valueOf(encodedData.length()));
             conn.getOutputStream().write(encodedData.getBytes());
@@ -110,15 +115,19 @@ public class JiraIssuesApi {
     public static String getBodyForZephyr() {
         JsonObject createSteps = Json.createObjectBuilder()
                 .add("step", "Check for schedule count")
+                .add("data", "")
                 .add("result", "Count should be equal to schedules returned by this filter.")
-                 .add("data", "filter id")
                 .build();
 
         return createSteps.toString();
     }
+    public static void jz(){
+       // createIssue();
+        zephyr();
+    }
 
     public static void main(String[] args) {
-      // jiraSendRequest();
-        zephyr();
+        createIssue();
+       // jz();
     }
 }

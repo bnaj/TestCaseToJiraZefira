@@ -72,6 +72,9 @@ public class TestScenarioLoad {
     public void allStuff() {
         ArrayList<String> file = WindowGui.selectedScenarios;
         for (int fileNumber = 0; fileNumber < file.size(); fileNumber++) {
+//            JiraIssuesApi.createIssue("PROJ",
+//                    firstScenarioData(0, 1, file.get(fileNumber)),
+//                    firstScenarioData(1, 1, file.get(fileNumber)));
 
             System.out.println(firstScenarioData(0, 1, file.get(fileNumber)));
             System.out.println(firstScenarioData(1, 1, file.get(fileNumber)));
