@@ -23,18 +23,19 @@ public class WindowGui extends JFrame {
         mainwindow.add(jspCheckbox());
         mainwindow.setVisible(true);
         mainwindow.setTitle("Add scenario");
-
     }
-    public JScrollPane jspCheckbox(){
+
+    public JScrollPane jspCheckbox() {
         JScrollPane jspCheckbox = new JScrollPane(checkboxPanel);
         jspCheckbox.setHorizontalScrollBarPolicy(
                 JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         jspCheckbox.setVerticalScrollBarPolicy(
                 JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         checkboxPanel.setLayout(new BoxLayout(checkboxPanel, BoxLayout.Y_AXIS));
-    return jspCheckbox;}
+        return jspCheckbox;
+    }
 
-    public JPanel buttons(){
+    public JPanel buttons() {
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
         buttonPanel.add(addFile());
@@ -66,7 +67,6 @@ public class WindowGui extends JFrame {
 
     public JButton addFile() {
         JButton addFile = new JButton("<html>Click to add<br>scenario</html");
-
         addFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ActionFileChoser();
@@ -114,9 +114,4 @@ public class WindowGui extends JFrame {
         }
     }
 
-
-    public static void main(String[] args) {
-        WindowGui starter = new WindowGui();
-        starter.mainWindow();
-    }
 }
