@@ -11,50 +11,106 @@ public class Step1Config extends JFrame {
     public static String jiraProjectKey;
 
     JFrame configWindow = new JFrame();
-    JLabel labelWww = new JLabel("<html>Enter your organization name Jira<br/> " +
+    JLabel WwwAddressLabel = new JLabel("<html>Enter your Jira organization name<br/> " +
             "like http://192.168.0.116:8080</html>");
-    JCheckBox wwwCh = new JCheckBox();
-    JTextField wwAdd = new JTextField(30);
-
+    JCheckBox wwwCheckbox = new JCheckBox();
+    JTextField wwwAddressField = new JTextField(30);
     JLabel projectLabel = new JLabel("Enter project key");
-    JCheckBox projectCh = new JCheckBox();
+    JCheckBox projectCheckbox = new JCheckBox();
     JTextField projectField = new JTextField(30);
-
-    JLabel login = new JLabel("Enter login");
-    JCheckBox loginCh = new JCheckBox();
+    JLabel loginLabel = new JLabel("Enter loginLabel");
+    JCheckBox loginCheckbox = new JCheckBox();
     JTextField loginField = new JTextField(30);
-
-    JLabel pass = new JLabel("Enter password");
-    JCheckBox passCh = new JCheckBox();
+    JLabel passLabel = new JLabel("Enter password");
+    JCheckBox passCheckbox = new JCheckBox();
     JPasswordField passField = new JPasswordField(30);
 
-    public JButton next() {
-        JButton nextB = new JButton("Click to go");
-        nextB.addActionListener(new ActionListener() {
+    public JButton nextButton() {
+        JButton nextButton = new JButton("Click to go");
+        nextButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 WindowGui step2 = new WindowGui();
                 configWindow.dispose();
                 step2.mainWindow();
             }
         });
-        return nextB;
+        return nextButton;
     }
 
-    public JPanel txtF() {
+    public JCheckBox wwwCheckbox() {
+        wwwCheckbox.setSelected(false);
+        wwwCheckbox.isVisible();
+        wwwCheckbox.revalidate();
+        wwwCheckbox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (wwwCheckbox.isSelected()) {
+                    wwwAddress = wwwAddressField.getText();
+                    System.out.println(wwwAddress);
+                }
+            }
+        });
+        return wwwCheckbox;
+    }
+
+    public JCheckBox projectCheckbox() {
+        projectCheckbox.setSelected(false);
+        projectCheckbox.isVisible();
+        projectCheckbox.revalidate();
+        projectCheckbox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (projectCheckbox.isSelected()) {
+                    jiraProjectKey = projectField.getText();
+                    System.out.println(jiraProjectKey);
+                }
+            }
+        });
+        return projectCheckbox;
+    }
+
+    public JCheckBox loginCheckbox() {
+        loginCheckbox.setSelected(false);
+        loginCheckbox.isVisible();
+        loginCheckbox.revalidate();
+        loginCheckbox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (loginCheckbox.isSelected()) {
+                    jiraLogin = loginField.getText();
+                    System.out.println(jiraLogin);
+                }
+            }
+        });
+        return loginCheckbox;
+    }
+
+    public JCheckBox passCheckbox() {
+        passCheckbox.setSelected(false);
+        passCheckbox.isVisible();
+        passCheckbox.revalidate();
+        passCheckbox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (passCheckbox.isSelected()) {
+                    jiraPass = passField.getText();
+                }
+            }
+        });
+        return passCheckbox;
+    }
+
+    public JPanel txtField() {
         JPanel textField = new JPanel();
-        textField.add(labelWww);
-        textField.add(wwAdd);
-        textField.add(wwwCh());
+        textField.add(WwwAddressLabel);
+        textField.add(wwwAddressField);
+        textField.add(wwwCheckbox());
         textField.add(projectLabel);
         textField.add(projectField);
-        textField.add(projectCh());
-        textField.add(login);
+        textField.add(projectCheckbox());
+        textField.add(loginLabel);
         textField.add(loginField);
-        textField.add(loginCh());
-        textField.add(pass);
+        textField.add(loginCheckbox());
+        textField.add(passLabel);
         textField.add(passField);
-        textField.add(passCh());
-        textField.add(next());
+        textField.add(passCheckbox());
+        textField.add(nextButton());
         textField.setLayout(new GridLayout(5, 3));
         return textField;
     }
@@ -62,69 +118,10 @@ public class Step1Config extends JFrame {
     public void configWindow() {
         configWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         configWindow.setSize(800, 300);
-        configWindow.add(txtF());
+        configWindow.add(txtField());
         configWindow.setVisible(true);
         configWindow.setTitle("Step 1 config");
         configWindow.setLocationRelativeTo(null);
-        }
-
-    public JCheckBox wwwCh() {
-        wwwCh.setSelected(false);
-        wwwCh.isVisible();
-        wwwCh.revalidate();
-        wwwCh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                if (wwwCh.isSelected()) {
-                    wwwAddress = wwAdd.getText();
-                    System.out.println(wwwAddress);
-                }
-            }
-        });
-        return wwwCh;
-    }
-
-    public JCheckBox projectCh() {
-        projectCh.setSelected(false);
-        projectCh.isVisible();
-        projectCh.revalidate();
-        projectCh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                if (projectCh.isSelected()) {
-                    jiraProjectKey = projectField.getText();
-                    System.out.println(jiraProjectKey);
-                }
-            }
-        });
-        return projectCh;
-    }
-
-    public JCheckBox loginCh() {
-        loginCh.setSelected(false);
-        loginCh.isVisible();
-        loginCh.revalidate();
-        loginCh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                if (loginCh.isSelected()) {
-                    jiraLogin = loginField.getText();
-                    System.out.println(jiraLogin);
-                }
-            }
-        });
-        return loginCh;
-    }
-
-    public JCheckBox passCh() {
-        passCh.setSelected(false);
-        passCh.isVisible();
-        passCh.revalidate();
-        passCh.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                if (passCh.isSelected()) {
-                    jiraPass = passField.getText();
-                }
-            }
-        });
-        return passCh;
     }
 
     public static void main(String[] args) {

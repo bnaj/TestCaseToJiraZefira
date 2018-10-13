@@ -11,8 +11,7 @@ public class WindowGui extends JFrame {
     public static ArrayList<String> selectedScenarios = new ArrayList<String>();
     public List<JCheckBox> checkBoxesList = new ArrayList<JCheckBox>();
     JPanel checkboxPanel = new JPanel();
-    TestScenarioLoad tcLoad = new TestScenarioLoad();
-
+    TestScenarioLoad testCaseLoad = new TestScenarioLoad();
 
     public void mainWindow() {
         WindowGui mainwindow = new WindowGui();
@@ -39,8 +38,8 @@ public class WindowGui extends JFrame {
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
         buttonPanel.add(addFile());
-        buttonPanel.add(run());
-        buttonPanel.add(deleteSt());
+        buttonPanel.add(runProgram());
+        buttonPanel.add(deleteTestCase());
         return buttonPanel;
     }
 
@@ -60,7 +59,7 @@ public class WindowGui extends JFrame {
                 checkBoxesList.add(new JCheckBox(filesss.getName()));
             }
         }
-        tcCheckbox();
+        testCaseCheckbox();
     }
 
     public JButton addFile() {
@@ -73,17 +72,17 @@ public class WindowGui extends JFrame {
         return addFile;
     }
 
-    public JButton run() {
-        JButton run = new JButton("Click to run ");
+    public JButton runProgram() {
+        JButton run = new JButton("Click to run");
         run.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                tcLoad.allStuff();
+                testCaseLoad.allStuff();
             }
         });
         return run;
     }
 
-    public JButton deleteSt() {
+    public JButton deleteTestCase() {
         JButton deleteSt = new JButton("Click to delete");
         deleteSt.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -103,7 +102,7 @@ public class WindowGui extends JFrame {
         return deleteSt;
     }
 
-    public void tcCheckbox() {
+    public void testCaseCheckbox() {
         for (JCheckBox box : checkBoxesList) {
             checkboxPanel.add(box);
             box.setSelected(false);
