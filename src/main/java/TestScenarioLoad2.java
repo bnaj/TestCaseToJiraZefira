@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestScenarioLoad {
+public class TestScenarioLoad2 {
 
     public List<XWPFTable> prepareTables(String fileName) {
         FileInputStream fis = null;
@@ -39,7 +39,7 @@ public class TestScenarioLoad {
 
             for (XWPFTableRow row : table.getRows()) {
 
-                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow) {
+                if (table.getRows().indexOf(row) >= Step2Config.stepsStartRow - 1) {
                     stepsArray.add(row.getCell(2).getText());
                 }
             }
@@ -53,7 +53,7 @@ public class TestScenarioLoad {
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
 
-                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow) {
+                if (table.getRows().indexOf(row) >= Step2Config.stepsStartRow - 1) {
                     resoultArr.add(row.getCell(2).getText());
                 }
             }
@@ -74,7 +74,7 @@ public class TestScenarioLoad {
         ArrayList<String> stepsArray = new ArrayList<String>();
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
-                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow) {
+                if (table.getRows().indexOf(row) >= Step2Config.stepsStartRow - 1) {
                     stepsArray.add(row.getCell(1).getText());
                 }
             }
@@ -86,7 +86,7 @@ public class TestScenarioLoad {
         ArrayList<String> resoultArr = new ArrayList<String>();
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
-                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow) {
+                if (table.getRows().indexOf(row) >= Step2Config.stepsStartRow - 1) {
                     resoultArr.add(row.getCell(2).getText());
                 }
             }
@@ -98,7 +98,7 @@ public class TestScenarioLoad {
         ArrayList<String> resoultArr = new ArrayList<String>();
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
-                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow) {
+                if (table.getRows().indexOf(row) >= Step2Config.stepsStartRow - 1) {
                     resoultArr.add(row.getCell(3).getText());
                 }
             }

@@ -12,6 +12,7 @@ public class WindowGui extends JFrame {
     public List<JCheckBox> checkBoxesList = new ArrayList<JCheckBox>();
     JPanel checkboxPanel = new JPanel();
     TestScenarioLoad testCaseLoad = new TestScenarioLoad();
+    TestScenarioLoad2 testCaseLoad2 = new TestScenarioLoad2();
 
     public void mainWindow() {
         WindowGui mainwindow = new WindowGui();
@@ -58,7 +59,7 @@ public class WindowGui extends JFrame {
                 selectedScenarios.add(files.getName());
                 checkBoxesList.add(new JCheckBox(files.getName()));
             }
-            filesPath = selectedFile[0].getAbsolutePath().replace(selectedFile[0].getName(),"");
+            filesPath = selectedFile[0].getAbsolutePath().replace(selectedFile[0].getName(), "");
         }
         testCaseCheckbox();
     }
@@ -77,7 +78,11 @@ public class WindowGui extends JFrame {
         JButton run = new JButton("Click to run");
         run.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                testCaseLoad.allStuff();
+                if (Step2Config.stepsStartRow > 0) {
+                    testCaseLoad2.allStuff();
+                } else {
+                    testCaseLoad.allStuff();
+                }
             }
         });
         return run;

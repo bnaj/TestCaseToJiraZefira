@@ -54,11 +54,19 @@ public class Step2Config extends JFrame {
             errorWindow("In the field: " + "\n" + descriptionLabelCell.getText() +
                     "\nYOU MUST ENTER NUMERIC VALUE!\nTHIS FIELD CANT BE EMPTY!");
         }
-
+        if(!(stepsStarts.getText().equals(""))) {
+            try {
+                stepsStartRow = Integer.parseInt(stepsStarts.getText());
+            } catch (NumberFormatException f) {
+                errorWindow("In the field: " + "\n" + stepsStarts.getText() +
+                        "\nYOU MUST ENTER NUMERIC VALUE!");
+            }
+        }
         System.out.println(scenarioTestSummaryRow);
         System.out.println(scenarioTestSummaryCell);
         System.out.println(scenarioTestDescriptionRow);
         System.out.println(scenarioTestDescriptionCell);
+        System.out.println(stepsStartRow);
     }
 
     public void configWindow() {

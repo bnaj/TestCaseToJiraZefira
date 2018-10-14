@@ -7,11 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="751b33ce-5ad6-41ef-8f8d-6dcfbd159f4b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Step2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Step1Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step1Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Step2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step2Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WindowGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindowGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step2Config$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step2Config$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step2Config$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step2Config$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step2Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step2Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,8 +46,20 @@
       <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+            <state relative-caret-position="300">
+              <caret line="41" column="92" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestScenarioLoad2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,8 +70,8 @@
       <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="-1144">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1738#1888#0" expanded="true" />
@@ -64,8 +86,8 @@
       <file leaf-file-name="Step2Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+            <state relative-caret-position="234">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4709#5244#0" expanded="true" />
@@ -80,13 +102,14 @@
       <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="270">
+              <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2601#2740#0" expanded="true" />
                 <element signature="e#2739#2740#0" expanded="true" />
-                <element signature="e#3032#3033#0" expanded="true" />
+                <element signature="e#2890#3135#0" expanded="true" />
+                <element signature="e#3134#3135#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,10 +151,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jira.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Step2Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Step2Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
       </list>
     </option>
@@ -367,7 +391,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19469696" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -419,16 +443,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -437,7 +451,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -492,7 +507,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -547,7 +563,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -602,7 +619,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -648,7 +666,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -678,7 +697,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,7 +729,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -741,7 +762,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -802,47 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2601#2740#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4709#5244#0" expanded="true" />
-            <element signature="e#5243#5244#0" expanded="true" />
-            <element signature="e#5401#5543#0" expanded="true" />
-            <element signature="e#5542#5543#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1738#1888#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#2311#2708#0" expanded="true" />
-            <element signature="e#2707#2708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8">
@@ -853,10 +834,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4709#5244#0" expanded="true" />
+            <element signature="e#5243#5244#0" expanded="true" />
+            <element signature="e#5401#5543#0" expanded="true" />
+            <element signature="e#5542#5543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1144">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="41" column="92" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

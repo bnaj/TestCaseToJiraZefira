@@ -9,10 +9,6 @@ public class Step1Config extends JFrame {
     public static String jiraLogin;
     public static String jiraPass;
     public static String jiraProjectKey;
-//    public static int scenarioTestSummaryRow;
-//    public static int scenarioTestSummaryCell;
-//    public static int scenarioTestDescriptionRow;
-//    public static int scenarioTestDescriptionCell;
 
     JFrame errorWindow = new JFrame();
     JFrame configWindow = new JFrame();
@@ -25,14 +21,6 @@ public class Step1Config extends JFrame {
     JTextField loginField = new JTextField(30);
     JLabel passLabel = new JLabel("Enter password");
     JPasswordField passField = new JPasswordField(30);
-//    JLabel summaryLabel = new JLabel("Enter row number of summary");
-//    JTextField summaryRow = new JTextField(5);
-//    JLabel summaryLabelCell = new JLabel("Enter cell number of summary txt in row");
-//    JTextField summaryCell = new JTextField(5);
-//    JLabel descriptionLabel = new JLabel("Enter row number of description");
-//    JTextField descriptionRow = new JTextField(5);
-//    JLabel descriptionLabelCell = new JLabel("Enter cell number of description txt in row");
-    JTextField descriptionCell = new JTextField(5);
 
     public JButton backButton() {
         JButton backButton = new JButton("back");
@@ -67,38 +55,9 @@ public class Step1Config extends JFrame {
         jiraLogin = loginField.getText();
         jiraProjectKey = projectField.getText();
         jiraPass = passField.getText();
-
-//        try {
-//            scenarioTestSummaryRow = Integer.parseInt(summaryRow.getText());
-//        } catch (NumberFormatException f) {
-//            errorWindow("In the field: " + "\n" + summaryLabel.getText() +
-//                    "\nYOU MUST ENTER NUMERIC VALUE!\nTHIS FIELD CANT BE EMPTY!");
-//        }
-//        try {
-//            scenarioTestSummaryCell = Integer.parseInt(summaryCell.getText());
-//        } catch (NumberFormatException f) {
-//            errorWindow("In the field: " + "\n" + summaryLabelCell.getText() +
-//                    "\nYOU MUST ENTER NUMERIC VALUE!\nTHIS FIELD CANT BE EMPTY!");
-//        }
-//        try {
-//            scenarioTestDescriptionRow = Integer.parseInt(descriptionRow.getText());
-//        } catch (NumberFormatException f) {
-//            errorWindow("In the field: " + "\n" + descriptionLabel.getText() +
-//                    "\nYOU MUST ENTER NUMERIC VALUE!\nTHIS FIELD CANT BE EMPTY!");
-//        }
-//        try {
-//            scenarioTestDescriptionCell = Integer.parseInt(descriptionCell.getText());
-//        } catch (NumberFormatException f) {
-//            errorWindow("In the field: " + "\n" + descriptionLabelCell.getText() +
-//                    "\nYOU MUST ENTER NUMERIC VALUE!\nTHIS FIELD CANT BE EMPTY!");
-//        }
         System.out.println(wwwAddress);
         System.out.println(jiraLogin);
         System.out.println(jiraProjectKey);
-//        System.out.println(scenarioTestSummaryRow);
-//        System.out.println(scenarioTestSummaryCell);
-//        System.out.println(scenarioTestDescriptionRow);
-//        System.out.println(scenarioTestDescriptionCell);
     }
 
     public void ifValidation() {
@@ -121,14 +80,6 @@ public class Step1Config extends JFrame {
         textField.add(loginField, 5);
         textField.add(passLabel, 6);
         textField.add(passField, 7);
-//        textField.add(summaryLabel, 8);
-//        textField.add(summaryRow, 9);
-//        textField.add(summaryLabelCell, 10);
-//        textField.add(summaryCell, 11);
-//        textField.add(descriptionLabel, 12);
-//        textField.add(descriptionRow, 13);
-//        textField.add(descriptionLabelCell, 14);
-//        textField.add(descriptionCell, 15);
         textField.setLayout(new GridLayout(4, 2));
         return textField;
     }
