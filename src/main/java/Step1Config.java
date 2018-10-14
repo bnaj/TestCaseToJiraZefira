@@ -65,7 +65,6 @@ public class Step1Config extends JFrame {
         JButton nextButton = new JButton("Click to step 2");
         nextButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
                 getDataFromField();
                 ifValidation();
                 Step2Config step2 = new Step2Config();

@@ -148,8 +148,7 @@ public class WindowGui extends JFrame {
                 for (JCheckBox box : checkBoxesList) {
                     if (box.isSelected()) {
                         for (int x = 0; x < selectedScenarios.size(); x++) {
-                            if (box.getText().equals(selectedScenarios.get(x)))
-                                selectedScenarios.remove(x);
+                            if (box.getText().equals(selectedScenarios.get(x))) selectedScenarios.remove(x);
                             System.out.println(WindowGui.filesPath);
                             checkboxPanel.remove(box);
                             checkboxPanel.revalidate();

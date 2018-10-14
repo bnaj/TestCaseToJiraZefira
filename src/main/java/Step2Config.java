@@ -34,7 +34,6 @@ public class Step2Config extends JFrame {
      */
     JFrame errorWindow = new JFrame();
     JFrame configWindow = new JFrame();
-
     JLabel summaryLabel = new JLabel("Enter row number of summary");
     JTextField summaryRow = new JTextField(5);
     JLabel summaryLabelCell = new JLabel("Enter cell number of summary txt in row");
@@ -43,7 +42,6 @@ public class Step2Config extends JFrame {
     JTextField descriptionRow = new JTextField(5);
     JLabel descriptionLabelCell = new JLabel("Enter cell number of description txt in row");
     JTextField descriptionCell = new JTextField(5);
-
     JCheckBox testData = new JCheckBox("<html>Do you use test data in zapi?<br/> check this box only if your test case" +
             " files looks like:<br/> |step number|step instruction|step data|step resoult|</html>");
     JLabel stepsStartsLabel = new JLabel("<html>Enter first steps row." +
@@ -165,7 +163,6 @@ public class Step2Config extends JFrame {
         JButton nextButton = new JButton("Click to go");
         nextButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
                 getDataFromField();
                 WindowGui step3 = new WindowGui();
                 if (errorWindow.isShowing()) {
