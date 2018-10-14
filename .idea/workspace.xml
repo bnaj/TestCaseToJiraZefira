@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="751b33ce-5ad6-41ef-8f8d-6dcfbd159f4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Step1Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step1Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Step2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TestCaseToJiraZefira_jar/TestCaseToJiraZefira.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WindowGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindowGui.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +34,8 @@
       <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1965">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="-420">
+              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestScenarioLoad2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestScenarioLoad2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="1088">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +58,7 @@
       <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="408">
               <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,8 +74,8 @@
       <file leaf-file-name="Step2Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="273">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4709#5244#0" expanded="true" />
@@ -90,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
+            <state relative-caret-position="78">
               <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,12 +139,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jira.java" />
         <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Step2Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Step2Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java" />
       </list>
     </option>
   </component>
@@ -174,7 +171,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="220" />
     <option name="y" value="24" />
     <option name="width" value="672" />
@@ -319,7 +316,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="744" extended-state="7" />
+    <frame x="0" y="23" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -331,11 +328,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2224026" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2224026" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -778,29 +775,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="78">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2890#3135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="408">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -814,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        <state relative-caret-position="273">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4709#5244#0" expanded="true" />
@@ -826,16 +817,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        <state relative-caret-position="-420">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2601#2740#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2890#3135#0" expanded="true" />
-            <element signature="e#3134#3135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

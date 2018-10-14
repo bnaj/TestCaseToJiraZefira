@@ -39,7 +39,7 @@ public class TestScenarioLoad2 {
             for (XWPFTableRow row : table.getRows()) {
 
                 if (table.getRows().indexOf(row) >= Step2Config.stepsStartRow - 1) {
-                    stepsArray.add(row.getCell(2).getText());
+                    stepsArray.add(row.getCell(1).getText());
                 }
             }
         }
@@ -114,10 +114,10 @@ public class TestScenarioLoad2 {
                     firstScenarioData(Step2Config.scenarioTestDescriptionRow - 1,
                             Step2Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
-            System.out.println(firstScenarioData(Step2Config.scenarioTestSummaryRow - 1,
-                    Step2Config.scenarioTestSummaryCell - 1, file.get(fileNumber)));
-            System.out.println(firstScenarioData(Step2Config.scenarioTestDescriptionRow - 1,
-                    Step2Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
+//            System.out.println(firstScenarioData(Step2Config.scenarioTestSummaryRow - 1,
+//                    Step2Config.scenarioTestSummaryCell - 1, file.get(fileNumber)));
+//            System.out.println(firstScenarioData(Step2Config.scenarioTestDescriptionRow - 1,
+//                    Step2Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
             for (int x = 0; x < tablesResoultIterator(file.get(fileNumber)).size(); x++) {
                 if (Step2Config.checkboxState == 1) {

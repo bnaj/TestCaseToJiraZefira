@@ -39,7 +39,7 @@ public class TestScenarioLoad {
             for (XWPFTableRow row : table.getRows()) {
 
                 if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow) {
-                    stepsArray.add(row.getCell(2).getText());
+                    stepsArray.add(row.getCell(1).getText());
                 }
             }
         }
