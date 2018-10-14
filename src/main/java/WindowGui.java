@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WindowGui extends JFrame {
-
+    public static String filesPath;
     public static ArrayList<String> selectedScenarios = new ArrayList<String>();
     public List<JCheckBox> checkBoxesList = new ArrayList<JCheckBox>();
     JPanel checkboxPanel = new JPanel();
@@ -44,7 +44,7 @@ public class WindowGui extends JFrame {
     }
 
     public void ActionFileChoser() {
-        JFileChooser fileChooser = new JFileChooser("/home/spike/Pulpit");
+        JFileChooser fileChooser = new JFileChooser();
         fileChooser.setMultiSelectionEnabled(true);
         fileChooser.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -54,10 +54,11 @@ public class WindowGui extends JFrame {
         if (status == JFileChooser.APPROVE_OPTION) {
 
             File[] selectedFile = fileChooser.getSelectedFiles();
-            for (File filesss : selectedFile) {
-                selectedScenarios.add(filesss.getName());
-                checkBoxesList.add(new JCheckBox(filesss.getName()));
+            for (File files : selectedFile) {
+                selectedScenarios.add(files.getName());
+                checkBoxesList.add(new JCheckBox(files.getName()));
             }
+            filesPath = selectedFile[0].getAbsolutePath().replace(selectedFile[0].getName(),"");
         }
         testCaseCheckbox();
     }
@@ -91,6 +92,7 @@ public class WindowGui extends JFrame {
                         for (int x = 0; x < selectedScenarios.size(); x++) {
                             if (box.getText().equals(selectedScenarios.get(x)))
                                 selectedScenarios.remove(x);
+                            System.out.println(WindowGui.filesPath);
                             checkboxPanel.remove(box);
                             checkboxPanel.revalidate();
                             checkboxPanel.repaint();

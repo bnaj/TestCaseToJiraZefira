@@ -15,7 +15,7 @@ public class TestScenarioLoad {
     public List<XWPFTable> prepareTables(String fileName) {
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream("/home/spike/Pulpit/" + fileName);
+            fis = new FileInputStream(WindowGui.filesPath + fileName);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -39,7 +39,7 @@ public class TestScenarioLoad {
 
             for (XWPFTableRow row : table.getRows()) {
 
-                if (table.getRows().indexOf(row) >= 2) {
+                if (table.getRows().indexOf(row) >= Step1Config.scenarioTestDescriptionRow + 1) {
                     stepsArray.add(row.getCell(1).getText());
                 }
             }
@@ -52,7 +52,7 @@ public class TestScenarioLoad {
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
 
-                if (table.getRows().indexOf(row) >= 2) {
+                if (table.getRows().indexOf(row) >= Step1Config.scenarioTestDescriptionRow + 1) {
                     resoultArr.add(row.getCell(2).getText());
                 }
             }
@@ -72,12 +72,16 @@ public class TestScenarioLoad {
     public void allStuff() {
         ArrayList<String> file = WindowGui.selectedScenarios;
         for (int fileNumber = 0; fileNumber < file.size(); fileNumber++) {
-            JiraIssuesApi.createIssue("PROJ",
-                    firstScenarioData(0, 1, file.get(fileNumber)),
-                    firstScenarioData(1, 1, file.get(fileNumber)));
+            JiraIssuesApi.createIssue(Step1Config.jiraProjectKey,
+                    firstScenarioData(Step1Config.scenarioTestSummaryRow - 1,
+                            Step1Config.scenarioTestSummaryCell - 1, file.get(fileNumber)),
+                    firstScenarioData(Step1Config.scenarioTestDescriptionRow - 1,
+                            Step1Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
-            System.out.println(firstScenarioData(0, 1, file.get(fileNumber)));
-            System.out.println(firstScenarioData(1, 1, file.get(fileNumber)));
+            System.out.println(firstScenarioData(Step1Config.scenarioTestSummaryRow - 1,
+                    Step1Config.scenarioTestSummaryCell - 1, file.get(fileNumber)));
+            System.out.println(firstScenarioData(Step1Config.scenarioTestDescriptionRow - 1,
+                    Step1Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
             for (int x = 0; x < tablesResoultIterator(file.get(fileNumber)).size(); x++) {
 

@@ -9,7 +9,19 @@
     <list default="true" id="751b33ce-5ad6-41ef-8f8d-6dcfbd159f4b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Step1Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step1Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WindowGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindowGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step1Config$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step1Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,13 +43,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+            <state relative-caret-position="1343">
+              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1738#1888#0" expanded="true" />
+                <element signature="e#1887#1888#0" expanded="true" />
+                <element signature="e#2311#2708#0" expanded="true" />
+                <element signature="e#2707#2708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,19 +74,14 @@
       <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="180">
+              <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="97" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2601#2740#0" expanded="true" />
+                <element signature="e#2739#2740#0" expanded="true" />
+                <element signature="e#2889#3033#0" expanded="true" />
+                <element signature="e#3032#3033#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +90,8 @@
       <file leaf-file-name="JiraIssuesApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="120" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="233">
+              <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,11 +121,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jira.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
       </list>
     </option>
   </component>
@@ -125,9 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,6 +177,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,18 +304,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3262987" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37012988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37012988" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -304,7 +327,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3262987" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -312,12 +335,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32792208" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -327,7 +350,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32792208" />
@@ -375,6 +398,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -384,6 +414,10 @@
           <caret line="32" column="26" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -420,6 +454,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -429,6 +470,10 @@
           <caret line="32" column="26" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -465,6 +510,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -474,6 +526,10 @@
           <caret line="32" column="26" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,6 +566,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -520,6 +583,10 @@
           <caret line="32" column="26" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -546,6 +613,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -570,6 +644,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,6 +676,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -621,6 +709,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,20 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="1343">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -692,17 +777,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="180">
+          <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="97" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#2889#3033#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        <state relative-caret-position="233">
+          <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
           </folding>
         </state>
       </provider>
