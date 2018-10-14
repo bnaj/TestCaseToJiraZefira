@@ -8,20 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="751b33ce-5ad6-41ef-8f8d-6dcfbd159f4b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Step1Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step1Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WindowGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WindowGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step1Config$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JiraIssuesApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JiraIssuesApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Step1Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step1Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestScenarioLoad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WindowGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WindowGui.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
+            <state relative-caret-position="-1264">
+              <caret line="54" column="31" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1738#1888#0" expanded="true" />
@@ -74,8 +63,8 @@
       <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="97" selection-end-column="52" />
+            <state relative-caret-position="91">
+              <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2601#2740#0" expanded="true" />
@@ -87,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JiraIssuesApi.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JiraIssuesApi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
+            <state relative-caret-position="158">
+              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,6 +100,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>token</find>
+      <find>PROJ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,10 +112,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jira.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
       </list>
     </option>
   </component>
@@ -135,6 +125,22 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestCaseToJiraZefira" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestCaseToJiraZefira" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="220" />
@@ -154,6 +160,24 @@
             <path>
               <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestCaseToJiraZefira" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestCaseToJiraZefira" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestCaseToJiraZefira" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestCaseToJiraZefira" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCaseToJiraZefira_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
@@ -309,7 +333,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37012988" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
@@ -775,10 +799,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1264">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1738#1888#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#2311#2708#0" expanded="true" />
+            <element signature="e#2707#2708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="97" selection-end-column="52" />
+        <state relative-caret-position="91">
+          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
@@ -791,24 +829,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
+        <state relative-caret-position="158">
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="153" column="47" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1738#1888#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#2311#2708#0" expanded="true" />
-            <element signature="e#2707#2708#0" expanded="true" />
           </folding>
         </state>
       </provider>

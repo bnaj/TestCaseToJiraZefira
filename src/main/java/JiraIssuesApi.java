@@ -10,6 +10,7 @@ import java.net.*;
 public class JiraIssuesApi {
 
     public static String issueID;
+    public static Step1Config errorWindow = new Step1Config();
 
     public static void createIssue(String projectKey, String summary, String description) {
         try {
@@ -47,6 +48,13 @@ public class JiraIssuesApi {
                 System.out.println(responseCode + " New issues key " + inputline2);
                 in.close();
             } catch (IOException e) {
+                if(responseCode==403||responseCode==401) {
+                    errorWindow.errorWindow(e.getMessage() + " " + responseCode +
+                            "\n!PROBABLY YOU ARE UNAUTORIZED!\n!START PROGRAM ONE MORE TIME AND ENTER VALID CREDENTIAL!");
+                }if (responseCode==404){
+                    errorWindow.errorWindow(e.getMessage() + " " + responseCode +
+                            "\n!PROBABLY YOU ENTER INWALID URL!\n!START PROGRAM ONE MORE TIME AND ENTER VALID ADDRESS!");
+                }
                 System.out.println(e.getMessage() + " " + responseCode);
             }
         } catch (Exception e) {
