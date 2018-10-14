@@ -100,9 +100,9 @@ public class Step1Config extends JFrame {
         message.setBackground(Color.red);
         errorWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         errorWindow.setSize(300, 200);
-        errorWindow.add(message,BorderLayout.CENTER);
+        errorWindow.add(message, BorderLayout.CENTER);
         message.setText(messageText);
-        errorWindow.add(backButton(),BorderLayout.SOUTH);
+        errorWindow.add(backButton(), BorderLayout.SOUTH);
         errorWindow.setVisible(true);
         errorWindow.setTitle("!Warning!");
         errorWindow.setLocationRelativeTo(null);

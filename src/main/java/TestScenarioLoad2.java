@@ -31,7 +31,6 @@ public class TestScenarioLoad2 {
         return tables;
     }
 
-
     public ArrayList<String> tablesStepsIterator(String fileName) {
         ArrayList<String> stepsArray = new ArrayList<String>();
 
@@ -121,11 +120,11 @@ public class TestScenarioLoad2 {
                     Step2Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
             for (int x = 0; x < tablesResoultIterator(file.get(fileNumber)).size(); x++) {
-                if(Step2Config.checkboxState==1) {
-                    JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber),true).get(x),
-                            tablesTestDataIterator(file.get(fileNumber),true).get(x),
-                            tablesResoultIterator(file.get(fileNumber),true).get(x));
-                }else{
+                if (Step2Config.checkboxState == 1) {
+                    JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber), true).get(x),
+                            tablesTestDataIterator(file.get(fileNumber), true).get(x),
+                            tablesResoultIterator(file.get(fileNumber), true).get(x));
+                } else {
                     JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber)).get(x),
                             tablesResoultIterator(file.get(fileNumber)).get(x));
                 }

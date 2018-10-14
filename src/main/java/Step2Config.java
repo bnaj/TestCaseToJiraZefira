@@ -54,7 +54,7 @@ public class Step2Config extends JFrame {
             errorWindow("In the field: " + "\n" + descriptionLabelCell.getText() +
                     "\nYOU MUST ENTER NUMERIC VALUE!\nTHIS FIELD CANT BE EMPTY!");
         }
-        if(!(stepsStarts.getText().equals(""))) {
+        if (!(stepsStarts.getText().equals(""))) {
             try {
                 stepsStartRow = Integer.parseInt(stepsStarts.getText());
             } catch (NumberFormatException f) {
@@ -89,9 +89,9 @@ public class Step2Config extends JFrame {
         textField.add(descriptionRow, 5);
         textField.add(descriptionLabelCell, 6);
         textField.add(descriptionCell, 7);
-        textField.add(stepsStartsLabel,8);
-        textField.add(stepsStarts,9);
-        textField.add(testData,10);
+        textField.add(stepsStartsLabel, 8);
+        textField.add(stepsStarts, 9);
+        textField.add(testData, 10);
         textField.setLayout(new GridLayout(7, 2));
         return textField;
     }
@@ -102,9 +102,9 @@ public class Step2Config extends JFrame {
         message.setBackground(Color.red);
         errorWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         errorWindow.setSize(300, 200);
-        errorWindow.add(message,BorderLayout.CENTER);
+        errorWindow.add(message, BorderLayout.CENTER);
         message.setText(messageText);
-        errorWindow.add(backButton(),BorderLayout.SOUTH);
+        errorWindow.add(backButton(), BorderLayout.SOUTH);
         errorWindow.setVisible(true);
         errorWindow.setTitle("!Warning!");
         errorWindow.setLocationRelativeTo(null);
@@ -122,8 +122,8 @@ public class Step2Config extends JFrame {
                 if (errorWindow.isShowing()) {
                 } else {
                     configWindow.dispose();
-                    if(testData.isSelected()){
-                        checkboxState =1;
+                    if (testData.isSelected()) {
+                        checkboxState = 1;
                         System.out.println(checkboxState);
                     }
                     step3.mainWindow();
@@ -132,6 +132,7 @@ public class Step2Config extends JFrame {
         });
         return nextButton;
     }
+
     public JButton backButton() {
         JButton backButton = new JButton("back");
         backButton.addActionListener(new ActionListener() {
@@ -140,10 +141,5 @@ public class Step2Config extends JFrame {
             }
         });
         return backButton;
-    }
-
-    public static void main(String[] args){
-    Step2Config w = new Step2Config();
-    w.configWindow();
     }
 }
