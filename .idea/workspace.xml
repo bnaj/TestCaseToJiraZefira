@@ -7,10 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="751b33ce-5ad6-41ef-8f8d-6dcfbd159f4b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Step2Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JiraIssuesApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JiraIssuesApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Step1Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Step1Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Step1Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Step1Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestScenarioLoad.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1343">
-              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="386">
+              <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,8 +48,8 @@
       <file leaf-file-name="Step1Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1264">
-              <caret line="54" column="31" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="31" />
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="14" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1738#1888#0" expanded="true" />
@@ -60,27 +61,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Step2Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4709#5244#0" expanded="true" />
+                <element signature="e#5243#5244#0" expanded="true" />
+                <element signature="e#5401#5543#0" expanded="true" />
+                <element signature="e#5542#5543#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WindowGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state relative-caret-position="1012">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2601#2740#0" expanded="true" />
                 <element signature="e#2739#2740#0" expanded="true" />
-                <element signature="e#2889#3033#0" expanded="true" />
                 <element signature="e#3032#3033#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JiraIssuesApi.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JiraIssuesApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+            <state relative-caret-position="8">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,10 +128,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jira.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/WindowGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Step2Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Step1Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/JiraIssuesApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScenarioLoad.java" />
       </list>
     </option>
   </component>
@@ -197,6 +214,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestCaseToJiraZefira" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestCaseToJiraZefira" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestCaseToJiraZefira" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -241,8 +269,8 @@
       <module name="TestCaseToJiraZefira" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestScenarioLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestScenarioLoad" />
+    <configuration name="Step2Config" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Step2Config" />
       <module name="TestCaseToJiraZefira" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -293,19 +321,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.TestScenarioLoad" />
       <item itemvalue="Application.WindowGui" />
       <item itemvalue="Application.Step1Config" />
       <item itemvalue="Application.JiraIssuesApi" />
       <item itemvalue="Application.Jira" />
+      <item itemvalue="Application.Step2Config" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Step1Config" />
+        <item itemvalue="Application.Step2Config" />
         <item itemvalue="Application.JiraIssuesApi" />
         <item itemvalue="Application.Jira" />
         <item itemvalue="Application.WindowGui" />
-        <item itemvalue="Application.TestScenarioLoad" />
       </list>
     </recent_temporary>
   </component>
@@ -335,11 +363,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37012988" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2224026" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19469696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -355,30 +383,30 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32792208" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37012988" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987034" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39772728" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32792208" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3262987" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32954547" />
       <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -391,23 +419,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -426,7 +437,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -482,7 +492,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -538,7 +547,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -594,7 +602,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -641,7 +648,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -672,7 +678,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -704,7 +709,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -737,7 +741,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2601#2740#0" expanded="true" />
             <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
             <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
@@ -789,20 +792,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/TestScenarioLoad.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="105" column="91" selection-start-line="105" selection-start-column="85" selection-end-line="105" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#7564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2601#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Step2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="114" column="24" lean-forward="true" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4709#5244#0" expanded="true" />
+            <element signature="e#5243#5244#0" expanded="true" />
+            <element signature="e#5401#5543#0" expanded="true" />
+            <element signature="e#5542#5543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Step1Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1264">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="31" />
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="14" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1738#1888#0" expanded="true" />
@@ -813,24 +843,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WindowGui.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        <state relative-caret-position="8">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2601#2740#0" expanded="true" />
-            <element signature="e#2739#2740#0" expanded="true" />
-            <element signature="e#2889#3033#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JiraIssuesApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScenarioLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        <state relative-caret-position="386">
+          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

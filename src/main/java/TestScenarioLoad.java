@@ -39,20 +39,21 @@ public class TestScenarioLoad {
 
             for (XWPFTableRow row : table.getRows()) {
 
-                if (table.getRows().indexOf(row) >= Step1Config.scenarioTestDescriptionRow + 1) {
-                    stepsArray.add(row.getCell(1).getText());
+                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow + 1) {
+                    stepsArray.add(row.getCell(2).getText());
                 }
             }
         }
         return stepsArray;
     }
 
+
     public ArrayList<String> tablesResoultIterator(String fileName) {
         ArrayList<String> resoultArr = new ArrayList<String>();
         for (XWPFTable table : prepareTables(fileName)) {
             for (XWPFTableRow row : table.getRows()) {
 
-                if (table.getRows().indexOf(row) >= Step1Config.scenarioTestDescriptionRow + 1) {
+                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow + 1) {
                     resoultArr.add(row.getCell(2).getText());
                 }
             }
@@ -69,26 +70,65 @@ public class TestScenarioLoad {
         return getOne;
     }
 
+    public ArrayList<String> tablesStepsIterator(String fileName, boolean testData) {
+        ArrayList<String> stepsArray = new ArrayList<String>();
+        for (XWPFTable table : prepareTables(fileName)) {
+            for (XWPFTableRow row : table.getRows()) {
+                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow + 1) {
+                    stepsArray.add(row.getCell(1).getText());
+                }
+            }
+        }
+        return stepsArray;
+    }
+
+    public ArrayList<String> tablesTestDataIterator(String fileName, boolean testData) {
+        ArrayList<String> resoultArr = new ArrayList<String>();
+        for (XWPFTable table : prepareTables(fileName)) {
+            for (XWPFTableRow row : table.getRows()) {
+                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow + 1) {
+                    resoultArr.add(row.getCell(2).getText());
+                }
+            }
+        }
+        return resoultArr;
+    }
+
+    public ArrayList<String> tablesResoultIterator(String fileName, boolean testData) {
+        ArrayList<String> resoultArr = new ArrayList<String>();
+        for (XWPFTable table : prepareTables(fileName)) {
+            for (XWPFTableRow row : table.getRows()) {
+                if (table.getRows().indexOf(row) >= Step2Config.scenarioTestDescriptionRow + 1) {
+                    resoultArr.add(row.getCell(3).getText());
+                }
+            }
+        }
+        return resoultArr;
+    }
+
     public void allStuff() {
         ArrayList<String> file = WindowGui.selectedScenarios;
         for (int fileNumber = 0; fileNumber < file.size(); fileNumber++) {
             JiraIssuesApi.createIssue(Step1Config.jiraProjectKey,
-                    firstScenarioData(Step1Config.scenarioTestSummaryRow - 1,
-                            Step1Config.scenarioTestSummaryCell - 1, file.get(fileNumber)),
-                    firstScenarioData(Step1Config.scenarioTestDescriptionRow - 1,
-                            Step1Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
+                    firstScenarioData(Step2Config.scenarioTestSummaryRow - 1,
+                            Step2Config.scenarioTestSummaryCell - 1, file.get(fileNumber)),
+                    firstScenarioData(Step2Config.scenarioTestDescriptionRow - 1,
+                            Step2Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
-            System.out.println(firstScenarioData(Step1Config.scenarioTestSummaryRow - 1,
-                    Step1Config.scenarioTestSummaryCell - 1, file.get(fileNumber)));
-            System.out.println(firstScenarioData(Step1Config.scenarioTestDescriptionRow - 1,
-                    Step1Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
+            System.out.println(firstScenarioData(Step2Config.scenarioTestSummaryRow - 1,
+                    Step2Config.scenarioTestSummaryCell - 1, file.get(fileNumber)));
+            System.out.println(firstScenarioData(Step2Config.scenarioTestDescriptionRow - 1,
+                    Step2Config.scenarioTestDescriptionCell - 1, file.get(fileNumber)));
 
             for (int x = 0; x < tablesResoultIterator(file.get(fileNumber)).size(); x++) {
-
-                JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber)).get(x),
-                        tablesResoultIterator(file.get(fileNumber)).get(x));
-                System.out.println(tablesStepsIterator(file.get(fileNumber)).get(x));
-                System.out.println(tablesResoultIterator(file.get(fileNumber)).get(x));
+                if(Step2Config.checkboxState==1) {
+                    JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber),true).get(x),
+                            tablesTestDataIterator(file.get(fileNumber),true).get(x),
+                            tablesResoultIterator(file.get(fileNumber),true).get(x));
+                }else{
+                    JiraIssuesApi.zephyr(tablesStepsIterator(file.get(fileNumber)).get(x),
+                            tablesResoultIterator(file.get(fileNumber)).get(x));
+                }
             }
         }
     }

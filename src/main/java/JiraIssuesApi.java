@@ -126,4 +126,55 @@ public class JiraIssuesApi {
 
         return createSteps.toString();
     }
+
+    public static void zephyr(String step, String testData, String resoult) {
+        try {
+            URL url = new URL(Step1Config.wwwAddress + "/rest/zapi/latest/teststep/" + issueID);
+
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setDoOutput(true);
+            conn.setDoInput(true);
+
+            String login = Step1Config.jiraLogin;
+            String password = Step1Config.jiraPass;
+            String loginPassword = login + ":" + password;
+
+            byte[] encoded = Base64.encode(loginPassword.getBytes());
+            String credentials = new String(encoded);
+
+            conn.setRequestMethod("POST");
+            conn.setRequestProperty("Authorization", "Basic " + credentials);
+            conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            String encodedData = getBodyForZephyr(step, testData, resoult);
+            conn.setRequestProperty("Content-Length", String.valueOf(encodedData.length()));
+            conn.getOutputStream().write(encodedData.getBytes());
+            System.out.println(getBodyForZephyr(step, testData, resoult));
+            int responseCode = conn.getResponseCode();
+
+            System.out.println(responseCode);
+            try {
+                BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+                while ((inputLine = in.readLine()) != null) {
+                    response.append(inputLine);
+                }
+                in.close();
+            } catch (IOException e) {
+                System.out.println(e.getMessage() + " " + responseCode);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String getBodyForZephyr(String step, String testData, String resoult) {
+        JsonObject createSteps = Json.createObjectBuilder()
+                .add("step", step)
+                .add("data", testData)
+                .add("result", resoult)
+                .build();
+
+        return createSteps.toString();
+    }
 }
