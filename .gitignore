@@ -27,7 +27,7 @@
 *.sqlite
 
 # Intellij
-*.idea/
+.idea/*
 *.iml
 *.iws
 
