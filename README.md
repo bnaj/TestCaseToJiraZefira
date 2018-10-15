@@ -32,7 +32,7 @@ In this card i tell you how start this program.
 
 For Windows users go to start enter cmd, hit comandline. Go to folder where you download TestCaseToJiraZefira.jar. In comand line enter java -jar TestCaseToJiraZefira.jar.
 
-file you can here find just download it.<<<<<<<<<<<<<<<<<<<
+file you can here find just download it from: https://github.com/bnaj/TestCaseToJiraZefira/releases/download/v1/TestCaseToJiraZefira.jar
 
 
 
