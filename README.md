@@ -36,8 +36,6 @@ file you can here find just download it from: https://github.com/bnaj/TestCaseTo
 
 
 
-When you start program you see something like:
-
 
 #
 # First window
